@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Asha Makeover | Luxury Beauty Parlour</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{font-family:Poppins,sans-serif;background:#fff8f7;color:#3d252c;line-height:1.7}
+header{position:sticky;top:0;z-index:1000;background:rgba(255,248,247,.97);border-bottom:1px solid #ead5d8;backdrop-filter:blur(10px)}
+.nav{max-width:1150px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:14px 22px}
+.logo{font-family:"Cormorant Garamond",serif;font-size:32px;font-weight:700;color:#8c3f58;cursor:pointer}
+nav{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}
+nav button{border:0;background:transparent;color:#56343d;padding:9px 11px;border-radius:20px;font:500 14px Poppins;cursor:pointer}
+nav button:hover,nav button.active{background:#ead0d6;color:#7b304b}
+.page{display:none;min-height:calc(100vh - 74px);animation:fade .35s ease}.page.active{display:block}
+@keyframes fade{from{opacity:.2;transform:translateY(8px)}to{opacity:1;transform:none}}
+.container{max-width:1100px;margin:auto;padding:60px 22px}
+.hero{min-height:calc(100vh - 74px);display:grid;place-items:center;text-align:center;padding:70px 20px;background:linear-gradient(135deg,#fff6f4,#f4dfe3)}
+.hero-inner{max-width:800px}.eyebrow{text-transform:uppercase;letter-spacing:3px;font-size:13px;color:#9a5368;margin-bottom:12px}
+h1,h2,h3{font-family:"Cormorant Garamond",serif;line-height:1.1}h1{font-size:72px;color:#733147}h2{font-size:48px;color:#7d3850;margin-bottom:18px}h3{font-size:29px;color:#7d3850;margin-bottom:8px}
+.hero p{max-width:650px;margin:20px auto;color:#62464d}.btn{display:inline-block;border:0;border-radius:30px;padding:13px 24px;margin:8px 5px;background:#8c3f58;color:#fff;text-decoration:none;font:600 14px Poppins;cursor:pointer;box-shadow:0 8px 20px #8c3f5830}.btn.alt{background:#fff;color:#8c3f58;border:1px solid #c98b9d}
+.section-head{text-align:center;margin-bottom:35px}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px}
+.card{background:#fff;border:1px solid #ecdde0;border-radius:20px;padding:27px;box-shadow:0 10px 30px #7d385010}.card p{color:#70575d;font-size:14px}.icon{font-size:36px;margin-bottom:12px}.price{font-weight:600;color:#8c3f58;margin-top:12px}
+.offer{background:#7d3850;color:white;border-radius:26px;padding:45px;text-align:center}.offer h2,.offer h3{color:#fff}.offer .big{font-size:70px;font-family:"Cormorant Garamond";font-weight:700}
+.package{border-top:4px solid #b36b82}.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:16px}.gallery div{height:220px;border-radius:18px;background:linear-gradient(135deg,#efd5dc,#f8eeeb);display:grid;place-items:center;text-align:center;padding:20px;color:#8c3f58;font-family:"Cormorant Garamond";font-size:27px}
+.form{max-width:720px;margin:auto;background:#fff;padding:30px;border-radius:22px;border:1px solid #ead7db;box-shadow:0 12px 35px #7d385010}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.field{display:flex;flex-direction:column;gap:6px}.field.full{grid-column:1/-1}
+label{font-size:13px;font-weight:600;color:#68434c}input,select,textarea{width:100%;padding:13px;border:1px solid #ddc7cc;border-radius:12px;background:#fffaf9;font:14px Poppins;color:#422b31;outline:none}
+input:focus,select:focus,textarea:focus{border-color:#a95c75}textarea{min-height:120px;resize:vertical}.success{display:none;margin-top:16px;padding:14px;border-radius:12px;background:#e8f5e9;color:#315b3a}
+.detail-box{max-width:800px;margin:auto;background:#fff;padding:35px;border-radius:22px;border:1px solid #ead7db}.detail-box ul{margin:15px 0 0 20px;color:#70575d}
+.contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.contact-card{background:#fff;border:1px solid #ead7db;border-radius:18px;padding:25px;text-align:center}
+footer{background:#3e2930;color:#f8e9ec;text-align:center;padding:28px}footer strong{font-family:"Cormorant Garamond";font-size:26px}.back{margin-bottom:25px;background:none;border:0;color:#8c3f58;cursor:pointer;font-weight:600}
+@media(max-width:760px){h1{font-size:53px}h2{font-size:40px}.nav{align-items:flex-start;gap:10px;flex-direction:column}nav{justify-content:flex-start}.form-grid,.contact-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.hero{min-height:calc(100vh - 120px)}}
+</style>
+
+<style>
+:root{--gold:#c59a45;--gold2:#ead09a;--pink:#b85d7b;--pink2:#f7e3e9;--cream:#fffaf7;--ink:#4b3435}
+body{font-family:Montserrat,Arial,sans-serif;background:linear-gradient(180deg,#fffaf7,#fff);color:var(--ink)}
+h1,h2,h3,.logo{font-family:"Cormorant Garamond",Georgia,serif}
+.logo{color:var(--gold);font-size:34px}.logo:after{content:"  ✦";font-size:14px;color:var(--pink)}
+header{border-bottom:1px solid rgba(197,154,69,.45);box-shadow:0 5px 22px rgba(100,60,40,.05)}
+nav button:hover,nav button.active{background:var(--pink2);color:var(--pink);box-shadow:inset 0 0 0 1px rgba(197,154,69,.22)}
+.hero{background:radial-gradient(circle at 10% 10%,#fff 0 18%,transparent 19%),linear-gradient(135deg,#fffdfb,#f7e3e9 52%,#fffaf4);position:relative;overflow:hidden}
+.hero:after{content:"";position:absolute;width:430px;height:430px;border:1px solid rgba(197,154,69,.28);border-radius:50%;right:-230px;bottom:-250px}
+.hero h1{color:var(--gold);text-shadow:0 2px 0 #fff;font-size:clamp(62px,10vw,105px)}
+.hero h2,h2,h3{color:var(--pink)}
+.btn{background:linear-gradient(135deg,#d5ae61,#b8832f);border:1px solid var(--gold);box-shadow:0 10px 24px rgba(130,85,25,.16);transition:transform .25s,box-shadow .25s}
+.btn:hover{transform:translateY(-3px);box-shadow:0 15px 30px rgba(130,85,25,.22)}
+.btn.alt{background:white;color:var(--pink);border-color:var(--gold)}
+.card,.form,.contact-card{border:1px solid #ead4a7;border-radius:24px;box-shadow:0 12px 34px rgba(92,54,45,.07);transition:.25s}
+.card:hover,.contact-card:hover{transform:translateY(-5px);box-shadow:0 18px 38px rgba(92,54,45,.12)}
+.card:before{content:"";display:block;height:3px;margin:-27px -27px 20px;background:linear-gradient(90deg,var(--gold),var(--pink),var(--gold))}
+.form{border-top:4px solid var(--gold);padding:34px}
+input:focus,select:focus,textarea:focus{border-color:var(--pink);box-shadow:0 0 0 4px rgba(184,93,123,.1)}
+.offer{background:linear-gradient(135deg,#a95170,#d58ca4);border:1px solid #d7b069}
+.gallery div{border:1px solid #d4b36d;box-shadow:0 10px 25px rgba(90,50,40,.08);transition:.25s}.gallery div:hover{transform:scale(1.02)}
+@media(max-width:820px){.nav{padding:10px 12px}.logo{font-size:30px}.form{padding:24px}}
+</style>
+</head>
+<body>
+<header><div class="nav"><div class="logo" onclick="showPage('home')">Asha Makeover</div><nav>
+<button data-page="home" onclick="showPage('home')">Home</button><button data-page="services" onclick="showPage('services')">Services</button><button data-page="bridal" onclick="showPage('bridal')">Bridal</button><button data-page="offers" onclick="showPage('offers')">Offers</button><button data-page="gallery" onclick="showPage('gallery')">Gallery</button><button data-page="team" onclick="showPage('team')">Join Our Team</button><button data-page="appointment" onclick="showPage('appointment')">Book Appointment</button><button data-page="contact" onclick="showPage('contact')">Contact</button>
+</nav></div></header>
+<main>
+<section id="home" class="page active"><div class="hero"><div class="hero-inner"><div class="eyebrow">Beauty • Bridal • Makeup • Nails</div><h1>Feel Beautiful.<br>Look Unforgettable.</h1><p>Welcome to <b>Asha Makeover</b>, your destination for elegant beauty, professional makeup and special-occasion makeovers in Mangolpuri, Delhi.</p><button class="btn" onclick="showPage('appointment')">Book Appointment</button><button class="btn alt" onclick="showPage('services')">Explore Services</button></div></div>
+<div class="container"><div class="section-head"><div class="eyebrow">Why Asha Makeover</div><h2>Beauty Made Personal</h2><p>Explore every section directly from the menu.</p></div><div class="cards">
+<div class="card"><div class="icon">✨</div><h3>Professional Care</h3><p>Beauty services designed around your look, occasion and preferences.</p></div><div class="card"><div class="icon">💍</div><h3>Bridal Beauty</h3><p>Dedicated bridal packages for your important celebrations.</p></div><div class="card"><div class="icon">💅</div><h3>Nail Art</h3><p>Elegant and creative nail looks for everyday and special occasions.</p></div><div class="card"><div class="icon">🌸</div><h3>Personal Touch</h3><p>A comfortable salon experience with attention to detail.</p></div></div></div></section>
+
+<section id="services" class="page"><div class="container"><button class="back" onclick="showPage('home')">← Back to Home</button><div class="section-head"><div class="eyebrow">Our Services</div><h2>Choose a Service</h2><p>Tap any service to see its details.</p></div><div class="cards">
+<div class="card"><div class="icon">💇‍♀️</div><h3>Hair Care</h3><p>Hair styling, care and occasion-ready looks.</p><button class="btn" onclick="showPage('hair')">View Details</button></div>
+<div class="card"><div class="icon">🧖‍♀️</div><h3>Facial & Skin</h3><p>Relaxing facial and skincare services.</p><button class="btn" onclick="showPage('facial')">View Details</button></div>
+<div class="card"><div class="icon">💅</div><h3>Nail Art</h3><p>Creative nail designs and finishing.</p><button class="btn" onclick="showPage('nails')">View Details</button></div>
+<div class="card"><div class="icon">💄</div><h3>Makeup</h3><p>Party and occasion makeup looks.</p><button class="btn" onclick="showPage('makeup')">View Details</button></div>
+<div class="card"><div class="icon">👰</div><h3>Bridal Beauty</h3><p>Complete bridal beauty packages.</p><button class="btn" onclick="showPage('bridal')">View Details</button></div></div></div></section>
+
+<section id="hair" class="page"><div class="container"><button class="back" onclick="showPage('services')">← Back to Services</button><div class="detail-box"><h2>Hair Care</h2><p>Give your hair a polished salon finish for everyday looks and special occasions.</p><ul><li>Hair styling & blow-dry</li><li>Party hairstyles</li><li>Hair wash & basic care</li><li>Occasion-ready styling</li></ul><button class="btn" onclick="setService('Hair Care')">Book Hair Service</button></div></div></section>
+<section id="facial" class="page"><div class="container"><button class="back" onclick="showPage('services')">← Back to Services</button><div class="detail-box"><h2>Facial & Skin Care</h2><p>Relax with a beauty-care session selected according to your occasion and preferences.</p><ul><li>Basic facial care</li><li>Glow-focused facial</li><li>Clean-up</li><li>Pre-event skin preparation</li></ul><button class="btn" onclick="setService('Facial & Skin Care')">Book Facial</button></div></div></section>
+<section id="nails" class="page"><div class="container"><button class="back" onclick="showPage('services')">← Back to Services</button><div class="detail-box"><h2>Nail Art</h2><p>Choose a neat, elegant or creative nail look to match your style.</p><ul><li>Basic nail care</li><li>Simple nail art</li><li>Party designs</li><li>Bridal-inspired nail looks</li></ul><button class="btn" onclick="setService('Nail Art')">Book Nail Service</button></div></div></section>
+<section id="makeup" class="page"><div class="container"><button class="back" onclick="showPage('services')">← Back to Services</button><div class="detail-box"><h2>Makeup</h2><p>Makeup looks for parties, functions, celebrations and special occasions.</p><ul><li>Party makeup</li><li>Event makeup</li><li>Traditional/celebration looks</li><li>Makeup with hairstyle coordination</li></ul><button class="btn" onclick="setService('Makeup')">Book Makeup</button></div></div></section>
+
+<section id="bridal" class="page"><div class="container"><button class="back" onclick="showPage('home')">← Back to Home</button><div class="section-head"><div class="eyebrow">For Your Big Day</div><h2>Bridal Packages</h2><p>Choose a package and book your preferred date.</p></div><div class="cards">
+<div class="card package"><h3>Classic Bride</h3><p>Elegant bridal makeup with hairstyle coordination and finishing.</p><div class="price">Contact for package price</div><button class="btn" onclick="setService('Bridal Package - Classic')">Book</button></div>
+<div class="card package"><h3>Premium Bride</h3><p>Complete bridal beauty preparation with makeup, hair and nail-focused finishing.</p><div class="price">Contact for package price</div><button class="btn" onclick="setService('Bridal Package - Premium')">Book</button></div>
+<div class="card package"><h3>Custom Bridal</h3><p>Create a bridal service combination based on your ceremony and preferences.</p><div class="price">Custom quote</div><button class="btn" onclick="setService('Bridal Package - Custom')">Enquire</button></div></div></div></section>
+
+<section id="offers" class="page"><div class="container"><button class="back" onclick="showPage('home')">← Back to Home</button><div class="offer"><div class="eyebrow" style="color:#f5d6df">Special Offer</div><h2>50% OFF</h2><p>Ask about the latest Asha Makeover special offers when submitting your appointment request.</p><button class="btn alt" onclick="setService('Special Offer - 50% OFF')">Claim Offer / Book</button></div></div></section>
+
+<section id="gallery" class="page"><div class="container"><button class="back" onclick="showPage('home')">← Back to Home</button><div class="section-head"><div class="eyebrow">Our Work</div><h2>Gallery</h2><p>Replace these placeholders with your real salon photos whenever you are ready.</p></div><div class="gallery"><div>Bridal Makeup</div><div>Party Makeup</div><div>Hair Styling</div><div>Nail Art</div><div>Salon Interior</div><div>Bridal Look</div></div></div></section>
+
+<section id="team" class="page"><div class="container"><button class="back" onclick="showPage('home')">← Back to Home</button><div class="section-head"><div class="eyebrow">Careers</div><h2>Join Our Team</h2><p>Interested in working with Asha Makeover?</p></div><div class="cards"><div class="card"><h3>Makeup Artist</h3><p>For candidates experienced in party and bridal makeup.</p></div><div class="card"><h3>Hair Stylist</h3><p>For creative stylists who enjoy occasion and everyday hair looks.</p></div><div class="card"><h3>Nail Artist</h3><p>For candidates with nail-care and nail-art skills.</p></div></div><div style="text-align:center;margin-top:25px"><button class="btn" onclick="setService('Job Application')">Apply / Contact Us</button></div></div></section>
+
+<section id="appointment" class="page"><div class="container"><button class="back" onclick="showPage('home')">← Back to Home</button><div class="section-head"><div class="eyebrow">Your Appointment</div><h2>Book an Appointment</h2><p>Fill in your details and send your booking request directly through WhatsApp.</p></div>
+<form class="form" id="appointmentForm"><div class="notice" style="background:#fff5f7;border:1px solid #efd1dc;border-radius:14px;padding:12px;margin-bottom:18px;font-size:13px;color:#704c59">Your booking details will open in WhatsApp. Just tap <b>Send</b> to send the request to Asha Makeover.</div><div class="form-grid">
+<div class="field"><label>Your Name</label><input id="name" name="name" required placeholder="Enter your name"></div>
+<div class="field"><label>Phone Number</label><input id="phone" name="phone" type="tel" required placeholder="Enter phone number"></div>
+<div class="field"><label>Your Email</label><input id="email" name="email" type="email" required placeholder="Enter your email"></div>
+<div class="field"><label>Service</label><select id="service" name="service" required><option value="">Select service</option><option>Hair Care</option><option>Facial & Skin Care</option><option>Nail Art</option><option>Makeup</option><option>Bridal Package</option><option>Other / Enquiry</option></select></div>
+<div class="field"><label>Date</label><input id="date" name="date" type="date" required></div>
+<div class="field"><label>Preferred Time</label><input id="time" name="time" type="time" required></div>
+<div class="field full"><label>Message</label><textarea id="message" name="message" placeholder="Tell us anything you would like us to know"></textarea></div>
+<div class="field full"><button class="btn" type="submit">Send Appointment on WhatsApp</button></div></div>
+<div class="success" id="success"></div><div id="error" style="display:none;margin-top:16px;padding:14px;border-radius:12px;background:#fde8e8;color:#7b3030"></div></form></div></section>
+
+<section id="contact" class="page"><div class="container"><button class="back" onclick="showPage('home')">← Back to Home</button><div class="section-head"><div class="eyebrow">Visit Us</div><h2>Contact Asha Makeover</h2></div><div class="contact-grid">
+<div class="contact-card"><h3>Phone</h3><p>9599469037</p><p style="font-size:13px">Use the appointment form for website bookings.</p></div>
+<div class="contact-card"><h3>Address</h3><p>L-1270 Mangolpuri,<br>Delhi</p></div>
+<div class="contact-card"><h3>Opening Hours</h3><p>10:00 AM – 8:00 PM</p></div></div><div style="text-align:center;margin-top:28px"><button class="btn" onclick="showPage('appointment')">Book Appointment Online</button></div></div></section>
+</main>
+<footer><strong>Asha Makeover</strong><br><small>Beauty • Bridal • Makeup • Nails | L-1270 Mangolpuri, Delhi | 10 AM – 8 PM</small></footer>
+
+<script>
+const pages=[...document.querySelectorAll('.page')];
+function showPage(id){pages.forEach(p=>p.classList.toggle('active',p.id===id));document.querySelectorAll('nav button').forEach(b=>b.classList.toggle('active',b.dataset.page===id));history.replaceState(null,'','#'+id);window.scrollTo({top:0,behavior:'smooth'});}
+function setService(service){document.getElementById('service').value=service.includes('Bridal')?'Bridal Package':service.includes('Offer')?'Other / Enquiry':service.includes('Job')?'Other / Enquiry':service;showPage('appointment');}
+function loadPage(){const id=location.hash.replace('#','');if(id&&document.getElementById(id))showPage(id);else showPage('home');}
+window.addEventListener('hashchange',loadPage);
+
+document.getElementById('appointmentForm').addEventListener('submit',function(e){
+ e.preventDefault();
+ const form=this;
+ const name=document.getElementById('name').value.trim(), phone=document.getElementById('phone').value.trim();
+ const email=document.getElementById('email').value.trim(), service=document.getElementById('service').value;
+ const date=document.getElementById('date').value, time=document.getElementById('time').value;
+ const message=document.getElementById('message').value.trim();
+ window.lastBooking=`NEW ASHA MAKEOVER APPOINTMENT\n\nName: ${name}\nPhone: ${phone}\nEmail: ${email}\nService: ${service}\nDate: ${date}\nPreferred Time: ${time}\nMessage: ${message||'No message'}\n\nAsha Makeover\nL-1270 Mangolpuri, Delhi\n9599469037`;
+ window.open('https://wa.me/919599469037?text='+encodeURIComponent(window.lastBooking),'_blank');
+ document.getElementById('success').innerHTML='Your booking message is ready in WhatsApp. Just tap <b>Send</b> to submit it.';
+ document.getElementById('success').style.display='block';
+ form.reset();
+});
+function sendWhatsApp(){window.open('https://wa.me/919599469037?text='+encodeURIComponent(window.lastBooking||'New appointment request for Asha Makeover.'),'_blank');}
+loadPage();
+</script>
+</body>
+</html>
